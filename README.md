@@ -29,16 +29,19 @@ What it does:
 - Dash, SQLite, Jupyter
 
 ## Project Structure
+```
+water-marking-equipment-monitoring/
 ├── data/
-│ ├── colors.txt
-│ ├── database.xlsx
-│ └── main_database.db
+│   ├── colors.txt
+│   ├── database.xlsx
+│   └── main_database.db
 ├── notebooks/
-│ ├── generate_data.ipynb
-│ └── dashboard.ipynb
+│   ├── generate_data.ipynb
+│   └── dashboard.ipynb
 ├── README.md
 ├── LICENSE
 └── requirements.txt
+```
 
 ## Quick Start
 
