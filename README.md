@@ -6,30 +6,48 @@
 
 ## Overview
 
-This project implements a predictive maintenance system for industrial sensors. It analyzes sensor data (5 parameters over time), trains a Ridge regression model, and provides interactive forecasts for individual parameters or overall sensor health. The system includes:
+This project predicts when industrial sensors might fail. It uses 5 sensor parameters, trains a Ridge regression model, and shows forecasts through a simple Dash dashboard.
 
-- **Data generation** (synthetic data with anomalies).
-- **Data analysis** (correlation, visualisation).
-- **Machine learning** (Ridge regression with cross-validation).
-- **Interactive dashboard** (built with Dash and Plotly).
+What it does:
+- Generates synthetic data with anomalies.
+- Analyzes correlations and visualizes trends.
+- Trains a model to predict failures.
+- Provides a web interface for on‑demand forecasts.
 
 ## Features
 
-- ✅ Synthetic data generation with realistic parameter ranges.
-- ✅ Anomaly injection to simulate equipment faults.
-- ✅ Time‑series plots and distribution histograms.
-- ✅ Weighted prediction for overall sensor health.
-- ✅ Parameter‑specific forecasts (e.g., “Check temperature sensor within 5 days”).
-- ✅ Web interface for manual prediction requests.
+- ✅ Synthetic data with realistic ranges and injected outliers
+- ✅ Time‑series plots and histograms
+- ✅ Forecasts for individual parameters (1–5)
+- ✅ Overall health prediction ("General")
+- ✅ Web dashboard with input field and response
 
-## Technology Stack
+## Tech Stack
 
-- **Python 3.9+**
-- **Data:** Pandas, NumPy
-- **Visualisation:** Matplotlib, Plotly
-- **Machine Learning:** Scikit-learn (Ridge, cross-validation)
-- **Dashboard:** Dash, Dash Core Components, Dash HTML Components
-- **Database:** SQLite
-- **Notebooks:** Jupyter
+- Python 3.9+, Pandas, NumPy, Matplotlib, Plotly
+- Scikit-learn (Ridge, cross‑validation)
+- Dash, SQLite, Jupyter
 
 ## Project Structure
+├── data/
+│ ├── colors.txt
+│ ├── database.xlsx
+│ └── main_database.db
+├── notebooks/
+│ ├── generate_data.ipynb
+│ └── dashboard.ipynb
+├── README.md
+├── LICENSE
+└── requirements.txt
+
+## Quick Start
+
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Generate data (optional)
+jupyter notebook notebooks/generate_data.ipynb
+
+# Run dashboard
+jupyter notebook notebooks/dashboard.ipynb
