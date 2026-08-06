@@ -24,9 +24,9 @@ What it does:
 
 ## Tech Stack
 
-- Python 3.9+, Pandas, NumPy, Matplotlib, Plotly
-- Scikit-learn (Ridge, cross‑validation)
-- Dash, SQLite, Jupyter
+- [Python](https://www.python.org/) 3.9+, [Pandas](https://pandas.pydata.org/), [NumPy](https://numpy.org/), [Matplotlib](https://matplotlib.org/), [Plotly](https://plotly.com/)
+- [Scikit-learn](https://scikit-learn.org/) (Ridge, cross‑validation)
+- [Dash](https://dash.plotly.com/), [SQLite](https://www.sqlite.org/), [Jupyter](https://jupyter.org/)
 
 ## Project Structure
 ```
